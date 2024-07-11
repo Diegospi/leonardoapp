@@ -10,33 +10,47 @@
 </head>
 <body>
     
-    <header>
-        <nav class="navbar navbar-expand-lg menu navbar-dark fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">LeonardoApp</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+  <header>
+    <nav class="navbar navbar-expand-lg menu navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">LeonardoApp</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="avatar" role="button" data-bs-toggle="dropdown"></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#" id="botonsalir">Salir</a>
                   </li>
                 </ul>
-              </div>
-            </div>
-          </nav>
+              </li>
+              <li class="nav-item mt-2">
+                <i class="bi bi-person-circle text-white fw-bold mt-5 fs-2"></i>
+              </li>
 
-    </header>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+</header>
     <main>
 
         <div class="banner"></div>
@@ -70,11 +84,14 @@
             </div>
         </div>
 
-        <section class="container-fluid g-0">
+        <section class="container-fluid g-0 text-center">
           <div class="row">
+            
             <div class="col-12 my-5">
-              <img src="./assets/img/sura.jpg" alt="foto" class="img-fluid">
+
+              <img src="./assets/img/sura.jpg" alt="foto" class="img-fluid mx-auto d-block">
             </div>
+
           </div>
           <div class="row">
             <div class="col-8">
@@ -88,7 +105,119 @@
         </section>
 
     </main>
+    <hr>
+
     <footer>
+
+      <section class="container-fluid text-center">
+
+        <div class="row">
+          <div class="col-4">
+            <h1>Leonardo</h1>
+              <img src="./assets/img/robot.png" alt="foto" class="img-fluid">
+
+            <P>¡Bienvenido a la página web de Leonardo, tu asistente virtual para resolver todas tus preguntas! Con la inteligencia artificial más avanzada, Leonardo está aquí para proporcionarte respuestas precisas y rápidas a cualquier consulta que tengas. No importa cuál sea tu pregunta, desde información general hasta detalles específicos, Leonardo está preparado para ayudarte.</P>
+          </div>
+
+          <div class="col-4">
+            <h1>Sura</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="row">
+              <div class="col-6">
+                <i class="bi bi-heart-pulse-fill text-primary fs-2"> EPS</i>
+              </div>
+              <div class="col-6">
+                <a href="https://www.epssura.com/">
+                  <button type="button" id="eps" class="btn btn-outline-primary w-100">
+                    Ir
+                  </button>
+                </a>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <div class="col-6">
+                <i class="bi bi-briefcase-fill text-primary fs-2"> ARL</i>
+              </div>
+              <div class="col-6">
+                <a href="https://www.arlsura.com/">
+                  <button type="button" id="arl" class="btn btn-outline-primary w-100">
+                    Ir
+                  </button>
+                </a>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <div class="col-6">
+                <i class="bi bi-car-front-fill text-primary fs-2"> Movilidad</i>
+              </div>
+              <div class="col-6">
+                <a href="https://www.segurossura.com.co/movilidad-segura/Paginas/default.aspx">
+                  <button type="button" id="movilidad" class="btn btn-outline-primary w-100">
+                    Ir
+                  </button>
+                </a>
+              </div>
+            </div>
+            
+
+          </div>
+
+          <div class="col-4">
+            <h1>Acerca de</h1>
+            <br>
+            <br>
+            <div class="row">
+              <div class="col-6">
+                <i class="bi bi-github fs-1">Tattiana</i>
+              </div>
+              <div class="col-6">
+                <a href="https://github.com/tattiana07">
+                  <button type="button" id="tatti" class="btn btn-outline-primary w-100">
+                    Ir
+                  </button>
+                </a>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <div class="col-6">
+                <i class="bi bi-github fs-1">Diego</i>
+              </div>
+              <div class="col-6">
+                <a href="https://github.com/Diegospi">
+                  <button type="button" id="diego" class="btn btn-outline-primary w-100">
+                    Ir
+                  </button>
+                </a>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+            <hr>
+            <p class="fw-bold">Sura Dual &copy;</p>
+            <p class="fw-bold">Medellín-Colombia</p>
+            <p class="fw-bold">2024</p>
+            <hr>
+            <p>Estamos estudiando desarrollo de software gracias al patrocinio de nuestra empresa. Este programa nos capacita para mejorar nuestras habilidades en un campo tecnológico clave, asegurando que estemos mejor preparados para contribuir al crecimiento y la innovación dentro de la empresa.</p>
+
+        </div>
+      </section>
+      <br>
+      <br>
 
     </footer>
 
