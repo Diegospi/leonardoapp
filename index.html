@@ -57,32 +57,23 @@
           <iframe width="600px" height="600px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=_tQLPBERE02ODHwzuet1gfuKEt1a_91Pr0OodEDWIPVUMzRQRUlGNDc2TVFUTUpMNlNKUlFDQVZTWi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
         </div>
 
-        <button class="btn btn-primary botonChat" id="botonChat" onclick="cambiarCaja()">Chatea con Leonardo</button>
+        <button class="btn btn-primary botonChat" id="botonChat">Chatea con Leonardo</button>
         <div class="cajaChat" id="cajaChat">
-            <div class="p-4">
-                <h5>Leonardo</h5>
-                <p>Bienvenido, soy Leonardo...</p>
-                <hr>
-                <p class="text-start fw-bold">
-                  Hola 
-                </p>
-                <p class="text-end text-primary fw-bold">
-                  Leonard
-                </p>
-
-                <div class="textoChat">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-8">
-                        <input type="text" class="form-control my-3" id="textoChat">
-                      </div>
-                      <div class="col-4 mt-2">
-                        <i class="bi bi-send fs-3 text-primary"></i>
-                      </div>
-                    </div>
+            <div class="p-4 mensajeChat"id="mensajeChat">
+              <p class="text-start">Hola Bienvenido</p>
+              <p class="text-end">Gracias</p>      
+            </div>
+            <div class="areaTextoChat">
+              <div class="container">
+                <div class="row">
+                  <div class="col-9">
+                    <input type="text" class="form-control my-3" id="textoChat">
+                  </div>
+                  <div class="col-3 mt-3">
+                    <i class="bi bi-arrow-right-square-fill fs-3 botonSend" id="botonSend"></i>
                   </div>
                 </div>
-                
+              </div>
             </div>
         </div>
 
@@ -229,5 +220,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./src/controllers/controlador.js" type="module"></script>
     <script src="./src/controllers/controladorSalida.js" type="module"></script>
+    <script src="./src/controllers/controladorChat.js" type="module"></script>
 </body>
 </html>

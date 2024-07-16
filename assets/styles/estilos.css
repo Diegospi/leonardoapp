@@ -29,6 +29,23 @@
     z-index: 1;
 }
 
+.mensajeChat{
+    overflow-y: auto;
+    height: 80%;
+    padding-bottom: 20px;
+}
+
+.areaTextoChat{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+}
+
+.botonSend{
+    cursor: pointer;
+}
+
 .textoChat{
     position: absolute;
     bottom: 0;
