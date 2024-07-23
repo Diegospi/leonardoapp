@@ -1,22 +1,25 @@
-let botonSend=document.getElementById("botonSend")
-let textoChat=document.getElementById("textoChat")
-let mensajeChat=document.getElementById("mensajeChat")
+let url="http://localhost:8000/leonardo"
+let peticion={
+    method:"GET"
+}
 
-let preguntas=[
-    "¿Cual es tu nombre?",
-    "¿Cuantos años tienes?",
-    "¿Cuál es tu pelicula favorita?",
-    "¿Tienes mascotas?",
-    "¿Cuál es tu hobby?"
-]
+fetch(url,peticion)
+.then(function(respuesta){
+    return respuesta.json()
+})
+.then(function(respuesta){
+    console.log(respuesta);
+    let botonSend=document.getElementById("botonSend");
+let textoChat=document.getElementById("textoChat");
+let mensajeChat=document.getElementById("mensajeChat");
 
-let respuestas=[
-    "Hola, mi nombre es Leonardo",
-    "Tengo 1 año",
-    "Mi pelicula favorita es Mr Robot",
-    "Si, 2 gatos",
-    "Ver peliculas"
-]
+//mapear el arreglo de preguntas y mapear el arreglo de respuestas
+let preguntas=respuesta.map(function(pregunta){
+    return pregunta.pregunta
+})
+let respuestas=respuesta.map(function(respuesta){
+    return respuesta.respuesta
+})
 
 //variable para contar el numero de preguntas
 let indicePregunta=0
@@ -47,3 +50,9 @@ textoChat.addEventListener("keypress",function(evento){
             procesarEntradaChat()
     }
 })
+
+})
+.catch(function(respuesta){
+    console.log(respuesta)
+})
+
